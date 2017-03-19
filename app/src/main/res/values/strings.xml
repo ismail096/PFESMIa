@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Health directory</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="open_drawer">Drawer Open</string>
+    <string name="close_drawer">Drawer Close</string>
+
+    <string-array name="Annuaire_choice">
+        <item>choisissez un annuaire</item>
+        <item>Pharmacies</item>
+        <item>Gardes</item>
+        <item>Medecins</item>
+        <item>Cliniques</item>
+    </string-array>
+
+    <string-array name="Categorie_choice">
+        <item>choisissez une categorie</item>
+        <item>Publique</item>
+        <item>Semi publique</item>
+        <item>Privé</item>
+    </string-array>
+
+
+    <string name="title_activity_maps">Map</string>
+
+</resources>

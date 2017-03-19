@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_medecin_profil"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:background="#20B2AA"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:weightSum="10"
+    android:orientation="vertical"
+    tools:context="com.navigation.drawer.activity.Activity.Profiles.MedecinProfil">
+
+
+
+    <ScrollView
+        android:layout_weight="9"
+        android:layout_marginTop="20dp"
+        android:fillViewport="true"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <LinearLayout
+            android:padding="10dp"
+            android:id="@+id/cliniqueInformations"
+            android:orientation="vertical"
+            android:background="@drawable/edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:background="#FAF0E6">
+    <TextView
+        android:textSize="17dp"
+        android:textStyle="bold"
+        android:layout_marginRight="20dp"
+        android:gravity="center"
+        android:background="#FAF0E6"
+        android:textColor="#f15c44"
+        android:layout_marginLeft="10dp"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:id="@+id/CliniqueName"
+        android:layout_weight="0.7"/>
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="0.1"
+            android:layout_height="match_parent"
+            android:src="@drawable/notfav"
+            android:id="@+id/fav_cli"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.08"
+            android:layout_height="match_parent"
+            />
+
+        <ImageView
+        android:layout_width="0dp"
+        android:layout_weight="0.1"
+        android:layout_height="match_parent"
+            android:src="@drawable/call"
+            android:id="@+id/telC"
+        />
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_marginTop="20dp"
+        android:background="#FAF0E6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:text="Informations : "
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            />
+        <TableLayout
+            android:weightSum="3"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="120dp">
+            <TableRow
+                android:gravity="center_vertical"
+                android:layout_marginLeft="25dp"
+                android:layout_weight="1">
+                <TextView
+                    android:text="Categorie : "
+                    />
+                <TextView
+                    android:id="@+id/CategorieC" />
+            </TableRow>
+            <TableRow
+                android:gravity="center_vertical"
+                android:layout_marginLeft="25dp"
+                android:layout_weight="1">
+                <TextView
+                    android:text="Tel :"/>
+                <TextView
+                    android:id="@+id/telCM" />
+            </TableRow>
+            <TableRow
+                android:gravity="center_vertical"
+                android:layout_marginLeft="25dp"
+                android:layout_weight="1">
+                <TextView
+                    android:text="Adresse :"/>
+                <TextView
+                    android:id="@+id/AdresseC" />
+            </TableRow>
+        </TableLayout>
+        </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:weightSum="1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="0.30"
+            android:layout_height="match_parent"
+            android:src="@drawable/back"
+            android:id="@+id/retourcp"/>
+        <ImageView
+            android:layout_marginRight="-100dp"
+            android:src="@drawable/localiserclinique"
+            android:id="@+id/localClinique"
+            android:layout_width="0dp"
+            android:layout_weight="0.6"
+            android:layout_height="match_parent"
+            />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.navigation.drawer.activity.Activity.AddProfiles.AddClinique">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="10"
+        tools:layout_editor_absoluteY="8dp"
+        tools:layout_editor_absoluteX="8dp">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:text="Ajouter un clinique"/>
+
+
+        <ScrollView
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/edit_text"
+            android:layout_weight="7"
+        >
+        <LinearLayout
+            android:id="@+id/clInfo"
+            android:padding="3dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:background="@drawable/edit_text"
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="horizontal"
+                android:weightSum="1"
+                android:layout_weight="1">
+                <TextView
+                    android:text="Name"
+                    android:textStyle="bold"
+                    android:gravity="center_vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.33" />
+                <EditText
+                    android:id="@+id/clName"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.66"/>
+            </LinearLayout>
+            <LinearLayout
+                android:background="@drawable/edit_text"
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="horizontal"
+                android:weightSum="1"
+                android:layout_weight="1">
+                <TextView
+                    android:layout_width="0dp"
+                    android:text="Categorie"
+                    android:textStyle="bold"
+                    android:gravity="center_vertical"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.33" />
+                <Spinner
+                    android:id="@+id/categ_choice"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.66" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:background="@drawable/edit_text"
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="horizontal"
+                android:weightSum="1"
+                android:layout_weight="1">
+                <TextView
+                    android:text="Adresse"
+                    android:textStyle="bold"
+                    android:gravity="center_vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.33" />
+
+                <EditText
+                    android:id="@+id/clAdresse"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.66" />
+            </LinearLayout>
+            <LinearLayout
+                android:background="@drawable/edit_text"
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="horizontal"
+                android:weightSum="1"
+                android:layout_weight="1">
+                <TextView
+                    android:text="tel"
+                    android:textStyle="bold"
+                    android:gravity="center_vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.33" />
+
+                <EditText
+                    android:id="@+id/clTel"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.66"
+                    android:allowUndo="true" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+        <ImageView
+            android:onClick="AddClinique"
+            android:src="@drawable/validate"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="0dp"
+            />
+    </LinearLayout>
+</RelativeLayout>

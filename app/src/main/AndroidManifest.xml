@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.navigation.drawer.activity"
+    android:versionCode="1"
+    android:versionName="1.0">
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="14" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:hardwareAccelerated="false"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!--
+        	We will launch BaseActivity as launcher.
+        	We will check if BaseActivity launch first time and open desired activity and set navigation item selected
+        -->
+        <activity
+            android:name=".Activity.BaseActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Activity.Main2Activity" />
+        <activity android:name=".Activity.SearchActivity" />
+        <activity android:name=".Activity.Alls.AllPharmaciesActivity" />
+        <activity android:name=".Activity.Alls.AllMedecinsActivity" />
+        <activity android:name=".Activity.Alls.AllCliniquesActivity" />
+        <activity android:name=".Activity.Alls.AllGardesActivity" />
+        <activity android:name=".Activity.Profiles.PharmacieProfil" />
+        <activity android:name=".Activity.Profiles.MedecinProfil" />
+        <activity android:name=".Activity.ResultActivity" />
+        <activity android:name=".Activity.FavorisActivity" />
+        <activity android:name=".Activity.MapActivity" />
+        <activity android:name=".Activity.AddProfiles.AddProfil" />
+        <activity android:name=".Activity.AddProfiles.AddClinique" />
+        <activity android:name=".Activity.AddProfiles.AddMedecin" />
+        <activity android:name=".Activity.AddProfiles.AddPharmacie" />
+        <activity android:name=".Activity.Profiles.CliniqueProfil" />
+
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity android:name=".Activity.UploadData"></activity>
+    </application>
+
+</manifest>

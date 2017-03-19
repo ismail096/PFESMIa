@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_search"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:orientation="vertical"
+    android:weightSum="10"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#20B2AA"
+    tools:context="com.navigation.drawer.activity.Activity.SearchActivity">
+    <LinearLayout
+        android:layout_marginBottom="10dp"
+        android:background="#FAF0E6"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:weightSum="10"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_weight="3"
+            android:id="@+id/searchBar"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:weightSum="1"
+            android:orientation="horizontal">
+            <EditText
+                android:layout_margin="3dp"
+                android:layout_weight="0.65"
+                android:layout_width="0dp"
+                android:paddingLeft="10dp"
+                android:layout_height="match_parent"
+                android:inputType="textPersonName"
+                android:hint="Search .. "
+                android:background="@drawable/edit_text"
+                android:id="@+id/editText3"
+                />
+            <Button
+                android:textStyle="bold"
+                android:textColor="#f15c44"
+                android:layout_weight="0.3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Search"
+                android:id="@+id/Search"
+                android:layout_marginRight="-7dp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:background="#FAF0E6"
+            android:id="@+id/selectSearchBar"
+            android:layout_below="@id/searchBar"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_weight="7.5"
+            android:layout_height="0dp"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="4"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="search in : "
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:textColor="#f15c44"/>
+                <LinearLayout
+                    android:layout_weight="1.5"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+                    <CheckBox
+
+                        android:text="Pharmacies"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/CheckPharmacies"
+                        android:layout_weight="1" />
+                    <CheckBox
+                        android:text="Medecins"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/CheckMedecins"
+                        android:layout_weight="1" />
+                </LinearLayout>
+
+                <CheckBox
+                    android:text="Cliniques"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/CheckCliniques"
+                    android:layout_weight="1"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="5.5"
+        android:padding="5dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:weightSum="2">
+        <LinearLayout
+            android:layout_weight="0.9"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/proche"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/b"/>
+            <ImageView
+                android:id="@+id/getPharmacies"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/pharmacies"/>
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="0.2"/>
+        <LinearLayout
+            android:layout_weight="0.9"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+            <ImageView
+                android:id="@+id/getCliniques"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/cliniques"/>
+            <ImageView
+                android:id="@+id/getMedecins"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/medecins"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>
